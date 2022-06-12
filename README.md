@@ -8,25 +8,19 @@ This is an Image Classifier that follows the Residual Network architecture with 
 
 In ResNets, a "shortcut" or a "skip connection" allows the gradient to be directly backpropagated to earlier layers:
 
-<div align="center">
-   <img src="./images/skip_connection_kiank.png" width=650 height=250>
-</div>
+<img width="669" alt="skip_connection_kiank" src="https://user-images.githubusercontent.com/103574122/173227870-83a6fa60-badb-44ea-8554-baf29dfbe023.png">
 
 The "identity block" is the standard block used in ResNets, and corresponds to the case where the input activation (say a[l]) has the same dimension as the output activation (say a[l+2]):
 
-<div align="center">
-   <img src="./images/idblock2_kiank.png" width=650 height=250>
-</div>
+<img width="591" alt="idblock2_kiank" src="https://user-images.githubusercontent.com/103574122/173227862-50356343-19ff-4a34-917f-71d48e43fade.png">
 
 Next, the ResNet "convolutional block" is the other type of block. You can use this type of block when the input and output dimensions don't match up. The difference here is that there is a CONV2D layer in the shortcut path:
 
-<div align="center">
-   <img src="./images/convblock_kiank.png" width=650 height=250>
-</div>
+<img width="647" alt="convblock_kiank" src="https://user-images.githubusercontent.com/103574122/173227858-814ec4a2-7a8c-494c-8b5b-77bd5ea44222.png">
 
 The detailed structure of this ResNet-50 model (I've also added additional Batch-Norm and Dropout Layers since they're absolutely awesome):
 
-![ResNet-50](./images/resnet_kiank.png)
+<img width="698" alt="resnet_kiank" src="https://user-images.githubusercontent.com/103574122/173227866-fa8c8bf1-5780-4004-9cce-cd66f3b4bc27.png">
 
 ## Dataset
 
